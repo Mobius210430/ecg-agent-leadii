@@ -14,7 +14,7 @@ COPY api_server.py .
 # 从 COS 下载模型压缩包并解压
 # 将下面的 URL 替换为你实际的对象地址
 ADD https://ecg-model-1394114335.cos.ap-guangzhou.myqcloud.com/ecg-model-leadII.tar.gz /app/ecg-model-leadII.tar.gz
-RUN tar -xzf ecg-model-LeadII.tar.gz -C /app && rm ecg-model-LeadII.tar.gz
+RUN tar -xzf ecg-model-LeadII.tar.gz -C /app && rm ecg-model-leadII.tar.gz
 
 # 声明端口
 EXPOSE 8000
