@@ -1,5 +1,5 @@
 # 使用官方 PyTorch 镜像
-FROM pytorch/pytorch:2.7.1-cuda11.8-cudnn8-devel
+FROM pytorch/pytorch:2.7.1-cuda12.8-cudnn9-devel
 
 # 设置工作目录
 WORKDIR /app
